@@ -79,7 +79,7 @@ func LoggerToFile() gin.HandlerFunc {
 		// 状态码
 		statusCode := c.Writer.Status()
 		// 请求IP
-		clientIP := common.GetClientIP(c)
+		clientIP := "127.0.0.1" //common.GetClientIP(c)
 		// 执行时间
 		latencyTime := endTime.Sub(startTime)
 		// 日志格式
